@@ -1,5 +1,5 @@
 # Inhalt dieses Repos  
-Dieses Repository (Repo) enthält alle wöchentlichen Leistungsnachweise inkl. Lernjournale des DOP-Moduls, die im Rahmen des Masterstudiengangs Wirtschaftsinformatik an der ZHAW erbracht werden müssen. 
+Dieses Repository (Repo) enthält alle wöchentlichen Leistungsnachweise inkl. Lernjournale des DOP-Moduls, die im Rahmen des Masterstudiengangs Wirtschaftsinformatik an der ZHAW im Herbstsemester 2024 erbracht werden müssen.  
 
 ## Um was geht es im DOP-Modul? 
 ### DevOps - kurz erklärt

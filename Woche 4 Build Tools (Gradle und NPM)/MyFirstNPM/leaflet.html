@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaflet Beispiel</title>
+    <link rel="stylesheet" href="node_modules/leaflet/dist/leaflet.css">
+    <!-- Einbindung des Leaflet CSS -->
+</head>
+<body>
+
+<div id="map" style="height: 400px;"></div>
+<!-- Div-Container für die Karte -->
+
+<script src="node_modules/leaflet/dist/leaflet.js"></script>
+<!-- Einbindung des Leaflet JavaScript -->
+<script>
+    var map = L.map('map').setView([51.505, -0.09], 13); // Karte initialisieren und Zentrum setzen
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map); // Kartenlayer hinzufügen
+    L.marker([51.5, -0.09]).addTo(map) // Marker hinzufügen
+        .bindPopup('Hello World!'); // Popup hinzufügen
+</script>
+
+</body>
+</html>

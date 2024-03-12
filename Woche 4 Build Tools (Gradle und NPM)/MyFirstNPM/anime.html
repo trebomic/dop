@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation mit Anime.js</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <!-- Laden Sie die Anime.js-Bibliothek von einem CDN (Content Delivery Network) -->
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+
+<div class="box"></div>
+
+<script>
+    // Erstellen einer Animation mit Anime.js
+    anime({
+        targets: '.box', // Das Ziel der Animation ist das Element mit der Klasse 'box'
+        translateX: 250, // Bewegen des Elements um 250px nach rechts
+        translateY: 100, // Bewegen des Elements um 100px nach unten
+        rotate: '1turn', // Drehen des Elements um 360 Grad
+        duration: 2000, // Dauer der Animation in Millisekunden (2 Sekunden)
+        loop: true // Die Animation wiederholt sich endlos
+    });
+</script>
+
+</body>
+</html>

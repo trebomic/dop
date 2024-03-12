@@ -23,6 +23,9 @@ dependencies {
 
     // This dependency is used by the application.
     implementation libs.guava
+
+    //This dependency is used to create ascii art banners
+    implementation 'com.github.lalyos:jfiglet:0.0.9'
 }
 
 // Apply a specific Java toolchain to ease working on different environments.

@@ -26,6 +26,9 @@ dependencies {
 
     //This dependency is used to create ascii art banners
     implementation 'com.github.lalyos:jfiglet:0.0.9'
+
+    //This dependency is used to convert text to numbers
+    implementation 'org.apache.commons:commons-lang3:3.14.0'
 }
 
 // Apply a specific Java toolchain to ease working on different environments.

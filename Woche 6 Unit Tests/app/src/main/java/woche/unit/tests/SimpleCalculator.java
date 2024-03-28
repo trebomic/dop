@@ -18,4 +18,10 @@ public class SimpleCalculator {
             throw new ArithmeticException("Division by zero");
         return a / b;
     }
+
+    public static double logarithm(double value) {
+        if (value <= 0)
+            throw new IllegalArgumentException("Logarithm of non-positive number is undefined");
+        return Math.log(value);
+    }
 }

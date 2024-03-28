@@ -29,4 +29,9 @@ public class SimpleCalculatorTest {
     public void testLogarithm() {
         assertEquals(1.6094379124341003, SimpleCalculator.logarithm(5), 0.0001);
     }
+
+    @Test
+    public void testExponentiation() {
+        assertEquals(8, SimpleCalculator.power(2, 3));
+    }
 }

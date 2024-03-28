@@ -28,4 +28,8 @@ public class SimpleCalculator {
     public static int power(int base, int exponent) {
         return (int) Math.pow(base, exponent);
     }
+
+    public static double squareRoot(double number) {
+        return Math.sqrt(number);
+    }
 }

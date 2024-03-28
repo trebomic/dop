@@ -32,4 +32,8 @@ public class SimpleCalculator {
     public static double squareRoot(double number) {
         return Math.sqrt(number);
     }
+
+    public static int modulus(int dividend, int divisor) {
+        return dividend % divisor;
+    }
 }

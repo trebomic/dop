@@ -24,4 +24,8 @@ public class SimpleCalculator {
             throw new IllegalArgumentException("Logarithm of non-positive number is undefined");
         return Math.log(value);
     }
+
+    public static int power(int base, int exponent) {
+        return (int) Math.pow(base, exponent);
+    }
 }

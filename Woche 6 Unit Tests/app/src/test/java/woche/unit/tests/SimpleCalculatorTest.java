@@ -49,4 +49,9 @@ public class SimpleCalculatorTest {
     public void testAbsoluteValue() {
         assertEquals(5, SimpleCalculator.absoluteValue(-5));
     }
+
+    @Test
+    public void testFactorial() {
+        assertEquals(120, SimpleCalculator.factorial(5));
+    }
 }

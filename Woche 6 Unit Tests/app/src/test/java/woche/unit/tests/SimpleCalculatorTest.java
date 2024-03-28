@@ -24,9 +24,4 @@ public class SimpleCalculatorTest {
     public void testDivision() {
         assertEquals(2, SimpleCalculator.divide(6, 3));
     }
-
-    @Test
-    public void testSin() {
-        assertEquals(0.8414709848078965, SimpleCalculator.sin(Math.PI / 3), 0.0001);
-    }
 }

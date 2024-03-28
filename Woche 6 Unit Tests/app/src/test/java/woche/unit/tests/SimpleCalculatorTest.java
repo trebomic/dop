@@ -34,4 +34,9 @@ public class SimpleCalculatorTest {
     public void testExponentiation() {
         assertEquals(8, SimpleCalculator.power(2, 3));
     }
+
+    @Test
+    public void testSquareRoot() {
+        assertEquals(3.0, SimpleCalculator.squareRoot(9), 0.001);
+    }
 }

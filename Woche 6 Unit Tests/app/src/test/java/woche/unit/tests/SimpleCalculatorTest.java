@@ -44,4 +44,9 @@ public class SimpleCalculatorTest {
     public void testModulus() {
         assertEquals(2, SimpleCalculator.modulus(7, 5));
     }
+
+    @Test
+    public void testAbsoluteValue() {
+        assertEquals(5, SimpleCalculator.absoluteValue(-5));
+    }
 }

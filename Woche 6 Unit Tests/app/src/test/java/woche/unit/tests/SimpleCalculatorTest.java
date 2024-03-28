@@ -39,4 +39,9 @@ public class SimpleCalculatorTest {
     public void testSquareRoot() {
         assertEquals(3.0, SimpleCalculator.squareRoot(9), 0.001);
     }
+
+    @Test
+    public void testModulus() {
+        assertEquals(2, SimpleCalculator.modulus(7, 5));
+    }
 }

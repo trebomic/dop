@@ -92,4 +92,8 @@ public class TicTacToe {
         }
         scanner.close();
     }
+
+    public char getBoardChar(int row, int col) {
+        return board[row][col];
+    }
 }

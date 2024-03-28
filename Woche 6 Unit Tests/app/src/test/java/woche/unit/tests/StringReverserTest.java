@@ -1,5 +1,5 @@
 package woche.unit.tests;
 
-public class StringInverter {
+public class StringReverserTest {
     
 }

@@ -36,4 +36,8 @@ public class SimpleCalculator {
     public static int modulus(int dividend, int divisor) {
         return dividend % divisor;
     }
+
+    public static int absoluteValue(int number) {
+        return Math.abs(number);
+    }
 }

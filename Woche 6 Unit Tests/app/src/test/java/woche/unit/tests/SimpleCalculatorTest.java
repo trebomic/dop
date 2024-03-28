@@ -24,4 +24,9 @@ public class SimpleCalculatorTest {
     public void testDivision() {
         assertEquals(2, SimpleCalculator.divide(6, 3));
     }
+
+    @Test
+    public void testLogarithm() {
+        assertEquals(1.6094379124341003, SimpleCalculator.logarithm(5), 0.0001);
+    }
 }

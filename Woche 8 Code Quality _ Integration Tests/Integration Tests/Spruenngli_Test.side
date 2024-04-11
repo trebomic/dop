@@ -1,0 +1,94 @@
+{
+  "id": "1eec237a-d7d8-4bd7-8181-48c2dcadc687",
+  "version": "2.0",
+  "name": "Sprüngli Test",
+  "url": "https://www.spruengli.ch",
+  "tests": [{
+    "id": "feb463b5-1036-4de1-82a1-c2092e37beb5",
+    "name": "Sprüngli Suche Label der ersten Schokoladenfabrikation",
+    "commands": [{
+      "id": "d396ed30-3784-4a3e-8517-a43b6eb8dd4b",
+      "comment": "",
+      "command": "open",
+      "target": "/de/ueber-spruengli/geschichte.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0ad3ac9c-bc9b-419d-9c6e-16ec1e5a8efe",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1038x1119",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4bf7fb31-33c8-4cb9-b37b-0dd756e108ef",
+      "comment": "",
+      "command": "click",
+      "target": "id=tm-main",
+      "targets": [
+        ["id=tm-main", "id"],
+        ["css=#tm-main", "css:finder"],
+        ["xpath=//div[@id='tm-main']", "xpath:attributes"],
+        ["xpath=//body/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1cb106fb-2219-4d87-aff8-6149d9c7dd65",
+      "comment": "Überprüft Textabschnitt unter dem Titel 1845.",
+      "command": "verifyText",
+      "target": "css=div:nth-child(2) .uk-grid p",
+      "targets": [],
+      "value": "Unter dem Label David Sprüngli & Fils beginnt die Schokoladenfabrikation."
+    }, {
+      "id": "9e7edce7-ed70-4b5b-a2c7-f45ddde655c7",
+      "comment": "Überprüft Textabschnitt unter dem Titel 1845.",
+      "command": "assertText",
+      "target": "css=div:nth-child(2) .uk-grid p",
+      "targets": [],
+      "value": "Unter dem Label David Sprüngli & Fils beginnt die Schokoladenfabrikation."
+    }, {
+      "id": "4196d2dd-19c2-46fe-ad0f-cefa7010a204",
+      "comment": "Überprüft, ob das Element, das dem angegebenen CSS-Selektor entspricht, auf der Seite vorhanden ist.",
+      "command": "assertElementPresent",
+      "target": "css=div:nth-child(1) > .uk-panel .uk-h2",
+      "targets": [
+        ["css=div:nth-child(1) > .uk-panel .uk-h2", "css:finder"],
+        ["xpath=//div[@id='wk-gridd4d']/div/div/div/div[2]/div/h3", "xpath:idRelative"],
+        ["xpath=//div/div[2]/div/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'1836')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9dcc27ec-1a77-41d6-b8bc-15595ea92385",
+      "comment": "Überprüft, ob das Element, das dem angegebenen CSS-Selektor entspricht, auf der Seite vorhanden ist.",
+      "command": "verifyElementPresent",
+      "target": "css=div:nth-child(1) > .uk-panel .uk-h2",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6af049f7-460f-4c10-b092-ca839902534d",
+      "comment": "Überprüft, ob das Element, das dem angegebenen CSS-Selektor entspricht, auf der Seite NICHT vorhanden ist.",
+      "command": "verifyElementNotPresent",
+      "target": "css=.lead-paragraph-center:nth-child(19)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9eff8b83-3129-46c9-93d1-74cbdf559d2c",
+      "comment": "Überprüft, ob das Element, das dem angegebenen CSS-Selektor entspricht, auf der Seite NICHT vorhanden ist.",
+      "command": "assertElementNotPresent",
+      "target": "css=.lead-paragraph-center:nth-child(19)",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "4bfc6988-74ae-4714-b854-c27bad07076c",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["feb463b5-1036-4de1-82a1-c2092e37beb5"]
+  }],
+  "urls": ["https://www.spruengli.ch/"],
+  "plugins": []
+}

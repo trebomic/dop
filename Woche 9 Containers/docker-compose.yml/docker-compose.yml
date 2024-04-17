@@ -1,28 +1,28 @@
 version: '3.8'
 
 services:
-   db:
-     image: mysql:8.2.0
-     volumes:
-       - db_data:/var/lib/mysql
-     restart: always
-     environment:
-       MYSQL_ROOT_PASSWORD: somewordpress
-       MYSQL_DATABASE: wordpress
-       MYSQL_USER: wordpress
-       MYSQL_PASSWORD: wordpress
+  postgres:
+    image: postgres
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    restart: always
+    environment:
+      POSTGRES_DB: drupal
+      POSTGRES_USER: drupal
+      POSTGRES_PASSWORD: drupal
 
-   wordpress:
-     depends_on:
-       - db
-     image: wordpress:6.4.2-php8.3
-     ports:
-       - "8000:80"
-     restart: always
-     environment:
-       WORDPRESS_DB_HOST: db:3306
-       WORDPRESS_DB_USER: wordpress
-       WORDPRESS_DB_PASSWORD: wordpress
-       WORDPRESS_DB_NAME: wordpress
+  drupal:
+    depends_on:
+      - postgres
+    image: drupal:latest
+    ports:
+      - "8080:80"
+    restart: always
+    environment:
+      DRUPAL_DB_HOST: postgres:5432
+      DRUPAL_DB_USER: drupal
+      DRUPAL_DB_PASSWORD: drupal
+      DRUPAL_DB_NAME: drupal
+
 volumes:
-    db_data: {}
+  db_data: {}
